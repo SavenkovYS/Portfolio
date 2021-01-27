@@ -4,29 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Юрий Савенков - портфолио frontend разработчика</title>
-    <link 
+    <link rel="stylesheet" href="css/style.css" />
+    <link
         rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" 
-        crossorigin="anonymous" 
-    />
-    <link rel="stylesheet" href="css/style.css" />
+        crossorigin="anonymous"
+     /> 
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/457f2a04a2.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="" alt="">
-        </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="#home" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Профессиональные навыки</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Обо мне</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Портфолио</a></li>
             </ul>
         </nav>
     </header>
@@ -35,75 +33,83 @@
 
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
-            Hi, I am <strong>Yury Savenkov</strong>
+            Всем привет, я <strong>Юрий Савенков</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-        <img src="" alt="a picture of me" class="intro__img">
+        <p class="section__subtitle section__subtitle--intro">front-end разработчик</p>
+        <img src="img/intro.jpg" alt="Это я" class="intro__img">
     </section>
 
-    <!-- My services -->
+    <!-- My skills -->
 
-    <section class="services" id="services">
-        <h2 class="section__title section__title--services">What I do</h2>
-        <ul class="services__list">
-            <li class="services__item">
-                <h3>Design + Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <section class="skills" id="skills">
+        <h2 class="skills__title section__title--skills">Мои профессиональные навыки</h2>
+        <ul class="skills__list">
+            <li class="skills__item">
+                <h3>Технологии веб-разработки</h3>
+                <ul class="skills__sublist">
+                    <li>Кроссбраузерная, валидная, семантичная, адаптивная верстка, верстка по методологии БЭМ.</li>
+                    <li>CSS, препроцессоры SASS/LESS.</li>
+                    <li>JavaScript (ES6).</li>
+                    <li>React.</li>
+                </ul>
             </li>
-            <li class="services__item">
-                <h3>E-Commerce</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <li class="skills__item">
+                <h3>Инструменты разработки</h3>
+                <ul class="skills__sublist">
+                    <li>Опыт работы с системой контроля версий Git.</li>
+                    <li>Cборщики проектов gulp/webpack.</li>
+                    <li>Необходимые для верстальщика навыки рыботы с Photoshop.</li>
+                </ul>
             </li>
-            <li class="services__item">
-                <h3>WordPress</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <li class="skills__item">
+                <h3>Прочие навыки</h3>
+                <ul class="skills__sublist">
+                    <li>Английский язык(B2-C1), Французский язык (A2-B1).</li>
+                    <li>Нацеленность доводить работу до конца.</li>
+                    <li>Постоянное самообучение.</li>
+                </ul>
             </li>
         </ul>
-        <a href="#work" class="btn">My Work</a>
+        <a href="#work" class="btn">Мои работы</a>
     </section>
 
     <!-- About me -->
 
     <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">Who I am</h2>
-        <p class="section__subtitle section__subtitle--about"></p>
-
+        <h2 class="section__title section__title--about">Обо мне</h2>
+        <p class="section__subtitle section__subtitle--about">front-end разработчик из Москвы</p>
         <div class="about-me__body">
-            <p></p>
-            <p></p>
+            <p>Приветствую Вас ещё раз на моём личном сайте-портфолио.
+                Я начинающий frontend разработчик. 
+                Сейчас большую часть своего вермени провожу за более углубленным изучением и совершенствованием веб-технологий, в основном JS и React.
+            </p>
+            <p>Но, конечно же, главным способом научиться разрабатывать сайты и приложения на высоком уровне является реальный опыт.
+                Поэтому в данный момент активно ищу работу. У меня есть огромное желание учиться, 
+                развиваться, овладевать новыми навыками и получать реальный опыт во frontend разработке</p>
         </div>
-        <img src="" alt="" class="about-me__img">
+        <img src="img/about.jpg" alt="" class="about-me__img">
     </section>
 
     <!-- My work -->
 
     <section class="my-work" id="work">
-        <h2 class="section__title">My work</h2>
-        <p class="section__subtitle"></p>
+        <h2 class="section__title section__title--work">Портфолио</h2>
+        <p class="section__subtitle section__subtitle--work">Некоторые из моих работ</p>
         <div class="portfolio">
-            <a href="" class="portfolio__item">
-                <img src="" alt="" class="portfolio__img">
+            <a href="project-1/project-1.html" class="portfolio__item">
+                <img src="img/preview-1.png" alt="" class="portfolio__img">
             </a>
-            <a href="" class="portfolio__item">
-                <img src="" alt="" class="portfolio__img">
+            <a href="project-2/project-2.html" class="portfolio__item">
+                <img src="img/preview-2.png" alt="" class="portfolio__img">
             </a>
-            <a href="" class="portfolio__item">
-                <img src="" alt="" class="portfolio__img">
+            <a href="project-3/project-3.html" class="portfolio__item">
+                <img src="img/preview-3.png" alt="" class="portfolio__img">
             </a>
-            <a href="" class="portfolio__item">
-                <img src="" alt="" class="portfolio__img">
+            <a href="project-4/project-4.html" class="portfolio__item">
+                <img src="img/preview-4.png" alt="" class="portfolio__img">
             </a>
-            <a href="" class="portfolio__item">
-                <img src="" alt="" class="portfolio__img">
-            </a>
-            <a href="" class="portfolio__item">
-                <img src="" alt="" class="portfolio__img">
+            <a href="project-5/project-5.html" class="portfolio__item">
+                <img src="img/preview-5.png" alt="" class="portfolio__img">
             </a>
         </div>
     </section>
@@ -111,20 +117,17 @@
     <!-- footer -->
 
     <footer class="footer">
-        <a href="" class="footer__link">yura-savenkov1@yandex.ru</a>
         <ul class="social-list">
             <li class="social-list__item">
-                <a href="" class="social-list__link"></a>
-            </li>
-            <li class="social-list__item">
-                <a href="" class="social-list__link"></a>
-            </li>
-            <li class="social-list__item">
-                <a href="" class="social-list__link"></a>
-            </li>
-            <li class="social-list__item">
                 <a href="" class="social-list__link">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <span>yura-savenkov1@yandex.ru</span>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://github.com/SavenkovYS" class="social-list__link">
                     <i class="fab fa-github"></i>
+                    <span>SavenkovYS</span>
                 </a>
             </li>
         </ul>  

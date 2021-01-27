@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Поиск фильмов</title>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" 
+        crossorigin="anonymous" 
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/457f2a04a2.js"></script>
+</head>
+<body>
+    <header>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="../index.html#services" class="nav__link">Профессиональные навыки</a></li>
+                <li class="nav__item"><a href="../index.html#about" class="nav__link">Обо мне</a></li>
+                <li class="nav__item"><a href="../index.html#work" class="nav__link">Портфолио</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+
+    <section class="intro intro--preview" id="home">
+        <h1 class="section__title section__title--intro">
+            Проект <strong>Movie Search</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--preview section__subtitle--intro">React</p>
+        <img src="../img/preview-5.png" alt="" class="intro__img intro__img--preview">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>Домашний проект сайта поиска фильмов на основе DBMovies API</p>
+        <a href="MovieSearch/index.html">
+            <img src="../img/preview-5.png" alt="" class="portfolio-item-img">
+        </a>
+        <p> Проект создан на React и стилизован на чистом CSS. Данные фильмов берутся из DBMovies API.
+            Проект собран через webpack
+        </p>
+        <p>Данные о фильмах получаются через AJAX запрос и записываются в состояние с помощью useState в виде массива.
+           Затем каждый элемент массива, который является объектом с информацией о фильме, мапируется и отображается на странице.
+        </p>
+    </div>
+
+    <footer class="footer">
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="" class="social-list__link">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <span>yura-savenkov1@yandex.ru</span>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://github.com/SavenkovYS" class="social-list__link">
+                    <i class="fab fa-github"></i>
+                    <span>SavenkovYS</span>
+                </a>
+            </li>
+        </ul>  
+    </footer>
+</body>
+</html>

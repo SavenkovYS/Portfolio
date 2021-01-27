@@ -1,5 +1,5 @@
 {
-  "name": "Portfolio site",
+  "name": "PortfolioSite",
   "version": "1.0.0",
   "description": "Portfolio site",
   "private": true,
@@ -35,6 +35,6 @@
     "terser-webpack-plugin": "^2.3.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1",
+    "webpack-dev-server": "^3.10.1"
   }
 }
