@@ -506,12 +506,15 @@ header {
 
 .portfolio__description {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%);
     z-index: -10;
 
     width: 80%;
+    padding: 5px 10px;
+    background-color: var(--clr-dark);
+    border-radius: 20px;
 
     color: #fff;
     letter-spacing: 1px;
@@ -523,10 +526,8 @@ header {
     transition: opacity 250ms linear;
 }
 
-.portfolio__description--bottom {
-    top: 50%;
-
-    color: crimson;
+.portfolio__description span {
+    display: block;
 }
 
 .portfolio__item:focus {
@@ -648,8 +649,15 @@ header {
 
 .intro__img--preview {
     object-fit: cover;
+    background-color: #fff;
     
     height: 250px;
+}
+
+.intro__img--db,
+.intro__img--netflix {
+    background-color: black;
+    object-fit: contain;
 }
 
 .section__subtitle--preview {
